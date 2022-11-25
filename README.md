@@ -30,9 +30,8 @@ The Perceptron Model implements the following function:
 
 
 
+![truth_xnor](https://user-images.githubusercontent.com/108029540/204030724-87715028-5fff-400e-bcb0-5cec00d6fdbf.png)
 
-
-![image](https://user-images.githubusercontent.com/108029540/204030606-61bf14f7-0f5d-468b-a786-f57b74930d51.png)
 
 
 ## Approach :     
