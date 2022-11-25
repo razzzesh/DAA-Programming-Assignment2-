@@ -111,7 +111,7 @@ XNOR(0, 0) = 1
 XNOR(1, 0) = 0
 
 
-Here, the model predicted output ($\boldsymbol{\hat{y}}$) for each of the test inputs are exactly matched with the XNOR logic gate conventional output ($\boldsymbol{y}$) according to the truth table.
+Here, the model predicted output  for each of the test inputs are exactly matched with the XNOR logic gate conventional output  according to the truth table.
 Hence, it is verified that the perceptron algorithm for XNOR logic gate is correctly implemented.
 
 
