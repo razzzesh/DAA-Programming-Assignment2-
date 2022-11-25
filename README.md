@@ -12,6 +12,15 @@ Roll : 54
 ## Logic/Thoery: 
 Implementation of Perceptron Algorithm for XNOR logic gate with 2-bit binary input.Perceptron is Machine Learning algorithm for supervised learning of various binary classification tasks.Binary classifiers are defined as the function that helps in deciding whether input data can be represented as vectors of numbers and belongs to some specific class.Perceptron is considered as a single-layer neural network that consists of four main parameters named input values (Input nodes), weights and Bias, net sum, and an activation function. The perceptron model begins with the multiplication of all input values and their weights, then adds these values together to create the weighted sum. Then this weighted sum is applied to the activation function 'f' to obtain the desired output. This activation function is also known as the step and function is represented by 'f'.
 
+![Screenshot (356)](https://user-images.githubusercontent.com/108029540/204027330-62990898-d066-47dc-a47a-1032fb49c5d3.png)
+
+
+
+
+
+
+
+
 The Perceptron Model implements the following function:
 
 ![Screenshot (355)](https://user-images.githubusercontent.com/108029540/204022012-7c45752d-6841-44ac-a000-5268c4bdeefd.png)
