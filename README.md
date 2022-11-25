@@ -28,6 +28,13 @@ The Perceptron Model implements the following function:
 ![Screenshot (355)](https://user-images.githubusercontent.com/108029540/204022012-7c45752d-6841-44ac-a000-5268c4bdeefd.png)
 
 
+
+
+
+
+![image](https://user-images.githubusercontent.com/108029540/204030606-61bf14f7-0f5d-468b-a786-f57b74930d51.png)
+
+
 ## Approach :     
 We can observe that,XNOR(x1,x2)=OR(NOT(OR(x1,x2)),AND(x1,x2))
 
@@ -122,7 +129,7 @@ XNOR(0, 0) = 1
 XNOR(1, 0) = 0
 
 
-Here, the model predicted output  for each of the test inputs are exactly matched with the XNOR logic gate conventional output  according to the truth table.
+The model predicted output  for each of the test inputs are exactly matched with the XNOR logic gate conventional output  according to the truth table.
 Hence, it is verified that the perceptron algorithm for XNOR logic gate is correctly implemented.
 
 
