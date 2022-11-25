@@ -14,7 +14,8 @@ Implementation of Perceptron Algorithm for XNOR logic gate with 2-bit binary inp
 
 The Perceptron Model implements the following function:
 
-![Screenshot (355)](https://user-images.githubusercontent.com/108029540/204000893-6f76704e-d723-431f-a4de-5647f8368607.
+![Screenshot (355)](https://user-images.githubusercontent.com/108029540/204022012-7c45752d-6841-44ac-a000-5268c4bdeefd.png)
+
 
 ## Approach :     
 We can observe that,XNOR(x1,x2)=OR(NOT(OR(x1,x2)),AND(x1,x2))
@@ -29,7 +30,9 @@ Step 2:The output (y1) from the OR node will be inputed to the NOT node with wei
 Step 3:The output (y2) from the AND node and the output(y3) from NOT node as mentioned in Step2 will be inputed to the OR node with weight (w OR1, w OR2).Then the corresponding output $\boldsymbol{\hat{y}}$ is the final output of the XNOR logic function. The associated Perceptron Function can be defined as:
                             y=(w OR1 y3+ w OR2 y2 +b OR)
                             
-                            ![image](https://user-images.githubusercontent.com/108029540/204020158-2db86c73-e500-4d52-9085-01b8a65cc05b.png)
+
+![XN_p](https://user-images.githubusercontent.com/108029540/204022075-b14d73b8-4520-4b84-a474-c1b0e7869583.png)
+                            
                             
      
  For the implementation, the weight parameters are considered to be w1=1,w2=1,w NOT=-1,w OR2=1 and the bias parameters are b AND=-1.5, b OR=-0.5 , b NOT=0.5
