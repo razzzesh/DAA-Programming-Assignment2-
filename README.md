@@ -30,11 +30,16 @@ The Perceptron Model implements the following function:
 
 
 
-![truth_xnor](https://user-images.githubusercontent.com/108029540/204030724-87715028-5fff-400e-bcb0-5cec00d6fdbf.png)
+
 
 
 
 ## Approach :     
+
+
+![truth_xnor](https://user-images.githubusercontent.com/108029540/204030724-87715028-5fff-400e-bcb0-5cec00d6fdbf.png)
+
+
 We can observe that,XNOR(x1,x2)=OR(NOT(OR(x1,x2)),AND(x1,x2))
 
 Step 1: Now for the corresponding weight vector w:(w1,w2) of the input vector x:(x1,x2) to the OR and AND node, the associated Perceptron Function can be defined as:
