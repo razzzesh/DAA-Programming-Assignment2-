@@ -64,51 +64,51 @@ Step 3:The output (y2) from the AND node and the output(y3) from NOT node as men
 # importing Python library
 import numpy as np
   
-# define Unit Step Function
-def unitStep(v):
+# dUnit Step Function
+def UnitStep(v):
     if v >= 0:
         return 1
     else:
         return 0
   
-# design Perceptron Model
-def perceptronModel(x, w, b):
+#  Perceptron Model Function
+def PerceptronModel(x, w, b):
     v = np.dot(w, x) + b
-    y = unitStep(v)
+    y = UnitStep(v)
     return y
   
 # NOT Logic Function
 # wNOT = -1, bNOT = 0.5
-def NOT_logicFunction(x):
+def NOT_Function(x):
     wNOT = -1
     bNOT = 0.5
-    return perceptronModel(x, wNOT, bNOT)
+    return PerceptronModel(x, wNOT, bNOT)
   
 # AND Logic Function
 # w1 = 1, w2 = 1, bAND = -1.5
-def AND_logicFunction(x):
+def AND_Function(x):
     w = np.array([1, 1])
     bAND = -1.5
-    return perceptronModel(x, w, bAND)
+    return PerceptronModel(x, w, bAND)
   
 # OR Logic Function
 # here w1 = wOR1 = 1, 
 # w2 = wOR2 = 1, bOR = -0.5
-def OR_logicFunction(x):
+def OR_Function(x):
     w = np.array([1, 1])
     bOR = -0.5
-    return perceptronModel(x, w, bOR)
+    return PerceptronModel(x, w, bOR)
   
 # XNOR Logic Function
 # with AND, OR and NOT  
 # function calls in sequence
-def XNOR_logicFunction(x):
-    y1 = OR_logicFunction(x)
-    y2 = AND_logicFunction(x)
-    y3 = NOT_logicFunction(y1)
-    final_x = np.array([y2, y3])
-    finalOutput = OR_logicFunction(final_x)
-    return finalOutput
+def XNOR_Function(x):
+    y1 = OR_Function(x)
+    y2 = AND_Function(x)
+    y3 = NOT_Function(y1)
+    finalvalue = np.array([y2, y3])
+    Output = OR_Function(finalvalue)
+    return Output
   
 # testing the Perceptron Model
 test1 = np.array([0, 1])
@@ -116,10 +116,10 @@ test2 = np.array([1, 1])
 test3 = np.array([0, 0])
 test4 = np.array([1, 0])
   
-print("XNOR({}, {}) = {}".format(0, 1, XNOR_logicFunction(test1)))
-print("XNOR({}, {}) = {}".format(1, 1, XNOR_logicFunction(test2)))
-print("XNOR({}, {}) = {}".format(0, 0, XNOR_logicFunction(test3)))
-print("XNOR({}, {}) = {}".format(1, 0, XNOR_logicFunction(test4)))
+print("XNOR({}, {}) = {}".format(0, 1, XNOR_Function(test1)))
+print("XNOR({}, {}) = {}".format(1, 1, XNOR_Function(test2)))
+print("XNOR({}, {}) = {}".format(0, 0, XNOR_Function(test3)))
+print("XNOR({}, {}) = {}".format(1, 0, XNOR_Function(test4)))
 ```
 
 Output :
